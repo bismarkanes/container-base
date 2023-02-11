@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import styles from './styles.module.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import styled from 'styled-components';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export const ContainerRowFlex = styled.div`
+  display: flex;
+  justify-content: ${props => props.justify || 'space-between' };
+  align-items: ${props => props.align || 'center'};
+  width: ${props => props.width};
+  height: ${props => props.height || 'initial'};
+  margin-top:${props => props.top};
+  margin-bottom: ${props => props.bottom ? props.bottom : 0};
+  padding-left: ${props => props.paddingHorizontal ? props.paddingHorizontal : 0};
+  padding-right: ${props => props.paddingHorizontal ? props.paddingHorizontal : 0};
+  flex: ${props => props.flex || 'none'};
+  background: ${props => props.background || 'initial'};
+  background-color: ${props => props.backgroundColor || 'initial'};
+  flex-wrap: ${props => props.wrap || 'initial'};
+`;
