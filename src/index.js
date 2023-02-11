@@ -1,5 +1,3 @@
-import styles from './styles.module.css'
-
 import styled from 'styled-components';
 
 export const ContainerRowFlex = styled.div`
