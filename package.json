@@ -1,10 +1,13 @@
 {
   "name": "container-base",
-  "version": "1.0.0",
-  "description": "Simple container base",
+  "version": "0.3.0",
+  "description": "Simple container based on flexbox",
   "author": "bismarkanes",
   "license": "MIT",
-  "repository": "bismarkanes/container-base",
+  "repository": {
+    "type": "git",
+    "url:": "git+https://github.com/bismarkanes/container-base.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
