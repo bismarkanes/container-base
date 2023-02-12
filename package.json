@@ -1,9 +1,14 @@
 {
-  "name": "container-base",
-  "version": "0.3.0",
+  "name": "@bismarkanes/container-base",
+  "version": "1.0.0",
   "description": "Simple container based on flexbox",
-  "author": "bismarkanes",
+  "author": "bismarkanes <bismark.john.anes@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "container",
+    "flexbox"
+  ],
   "repository": {
     "type": "git",
     "url:": "git+https://github.com/bismarkanes/container-base.git"
