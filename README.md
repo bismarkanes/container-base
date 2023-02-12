@@ -27,14 +27,24 @@ npm install https://github.com/bismarkanes/container-base#0.1.0
 ```jsx
 import React from 'react'
 
-import { ContainerRowFlex } from 'container-base'
+import { ContainerBase } from 'container-base'
 
 class Example extends React.Component {
   render() {
     return (
-      <ContainerRowFlex backgroundColor="red" >
-        Hello Universe
-      </ContainerRowFlex>
+      <ContainerBase 
+	      justify="flex-end"
+          height="100vh"
+	  >
+          <ContainerBase
+            border="2px solid grey"
+            justify="center"
+            height="250px"
+            width="250px"
+          >
+            <p>Nunc rutrum turpis sed pede</p>
+          </ContainerBase>
+      </ContainerBase>
     )
   }
 }
