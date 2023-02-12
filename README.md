@@ -33,7 +33,7 @@ class Example extends React.Component {
   render() {
     return (
       <ContainerBase 
-	      justify="flex-end"
+		  justify="flex-end"
           height="100vh"
 	  >
           <ContainerBase
