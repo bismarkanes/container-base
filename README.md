@@ -10,10 +10,6 @@ This library is using:
 ## Install
 
 ```bash
-npm install --save container-base
-
-or
-
 npm install @bismarkanes/container-base
 ```
 
@@ -26,7 +22,7 @@ npm install @bismarkanes/container-base
 ```jsx
 import React from 'react'
 
-import { ContainerBase } from 'container-base'
+import { ContainerBase } from '@bismarkanes/container-base'
 
 class Example extends React.Component {
   render() {
