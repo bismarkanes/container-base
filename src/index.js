@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerRowFlex = styled.div`
+export const ContainerBase = styled.div`
   width: ${props => props.width};
   height: ${props => props.height || 'initial'};
 
