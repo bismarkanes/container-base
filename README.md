@@ -19,27 +19,64 @@ npm install @bismarkanes/container-base
 
 ## Usage
 
+> ContainerBaseRow is row oriented container using flex.
+
+> ContainerBaseBlock is block oriented container.
+
 ```jsx
 import React from 'react'
-
-import { ContainerBase } from '@bismarkanes/container-base'
+import { ContainerBaseRow, ContainerBaseBlock } from 'container-base'
 
 class Example extends React.Component {
   render() {
     return (
-      <ContainerBase 
-        justify="flex-end"
-        height="100vh"
-	  >
-          <ContainerBase
+      <ContainerBaseRow>
+        <ContainerBaseBlock>
+          <ContainerBaseRow
             border="2px solid grey"
-            justify="center"
+            justify="space-between"
+            align="center"
             height="250px"
-            width="250px"
+            width="500px"
           >
-            <p>Nunc rutrum turpis sed pede</p>
-          </ContainerBase>
-      </ContainerBase>
+            <p>Row 1, Block 1, Row 1</p>
+            <p>Row 1, Block 1, Row 2</p>
+          </ContainerBaseRow>
+          <ContainerBaseRow
+            border="2px solid grey"
+            justify="space-around"
+            align="flex-start"
+            height="250px"
+            width="500px"
+          >
+            <p>Row 1, Block 2, Row 1</p>
+            <p>Row 1, Block 2, Row 2</p>
+          </ContainerBaseRow>
+        </ContainerBaseBlock>
+
+        <ContainerBaseBlock>
+          <ContainerBaseRow
+            border="2px solid grey"
+            justify="space-between"
+            align="center"
+            height="250px"
+            width="500px"
+          >
+            <p>Row 2, Block 1, Row 1</p>
+            <p>Row 2, Block 1, Row 2</p>
+          </ContainerBaseRow>
+          <ContainerBaseRow
+            border="2px solid grey"
+            justify="space-around"
+            align="flex-start"
+            height="250px"
+            width="500px"
+          >
+            <p>Row 2, Block 2, Row 1</p>
+            <p>Row 2, Block 2, Row 2</p>
+          </ContainerBaseRow>
+        </ContainerBaseBlock>
+      </ContainerBaseRow>
     )
   }
 }
