@@ -1,6 +1,6 @@
 {
   "name": "@bismarkanes/container-base",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple container based on flexbox",
   "author": "bismarkanes <bismark.john.anes@gmail.com>",
   "license": "MIT",
@@ -11,8 +11,12 @@
   ],
   "repository": {
     "type": "git",
-    "url:": "git+https://github.com/bismarkanes/container-base.git"
+    "url:": "https://github.com/bismarkanes/container-base.git"
   },
+  "bugs": {
+    "url": "https://github.com/bismarkanes/container-base/issues"
+  },
+  "homepage": "https://github.com/bismarkanes/container-base",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
