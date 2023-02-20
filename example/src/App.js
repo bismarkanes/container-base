@@ -12,11 +12,28 @@ const DivBackground = styled.div`
   background-color: purple;
 `;
 
+const DivTest = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: red;
+`;
+
 class Example extends React.Component {
   render() {
     return (
       <React.Fragment>
-
+        <ContainerBaseRow
+          position="absolute"
+          top="0"
+          bottom="0"
+          left="0"
+          right="0"
+          border="1px solid blue"
+          justify="center"
+          align="center"
+        >
+          <DivTest/>
+        </ContainerBaseRow>
         <ContainerBaseRow
           justify="space-around"
         >
