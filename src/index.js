@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const _container = styled.div`
   width: ${(props) => props.width};
-  height: ${(props) => props.height || 'initial'};
+  height: ${(props) => props.height};
   position: ${(props) => props.position};
   display: ${(props) => props.display};
 
@@ -11,6 +11,11 @@ const _container = styled.div`
   margin-bottom: ${(props) => props.marginBottom};
   margin-left: ${(props) => props.marginLeft};
   margin-right: ${(props) => props.marginRight};
+
+  top: ${(props) => props.top};
+  bottom: ${(props) => props.bottom};
+  left: ${(props) => props.left};
+  right: ${(props) => props.right};
 
   padding: ${(props) => props.padding || 0};
   padding-top: ${(props) => props.paddingTop};
