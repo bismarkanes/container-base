@@ -1,6 +1,6 @@
 {
   "name": "@bismarkanes/container-base",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple container based on flexbox",
   "author": "bismarkanes <bismark.john.anes@gmail.com>",
   "license": "MIT",
