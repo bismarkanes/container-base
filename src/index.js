@@ -24,6 +24,8 @@ const _container = styled.div`
   padding-right: ${(props) => props.paddingRight};
 
   border: ${(props) => props.border || 'initial'};
+  box-sizing: border-box;
+  ${(props) => props.inlineCss || ''}
 `
 export const ContainerBaseRow = styled(_container)`
   display: flex;
