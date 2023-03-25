@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ContainerBaseRow, ContainerBaseBlock } from 'container-base'
+import { ContainerBaseRow, ContainerBaseBlock, ContainerBaseColumn } from 'container-base'
 
 
 const DivBackground = styled.div`
@@ -56,6 +56,10 @@ class Example extends React.Component {
             width="250px"
           >
             <p>Lorem ipsum dolor sit amet</p>
+            <ContainerBaseColumn justify="space-between" height="100%">
+              <p>Item 1</p>
+              <p>Item 2</p>
+            </ContainerBaseColumn>
           </ContainerBaseRow>
 
           <ContainerBaseRow

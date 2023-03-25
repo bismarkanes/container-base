@@ -37,5 +37,11 @@ export const ContainerBaseBlock = styled(_container)`
   display: block;
 `
 
+export const ContainerBaseColumn = styled(ContainerBaseRow)`
+  flex-direction: column;
+  justify-content: ${(props) => props.justify || 'flex-start'};
+  align-items: ${(props) => props.align || 'flex-start'};
+`
+
 // alias
 export const ContainerBase = ContainerBaseRow
