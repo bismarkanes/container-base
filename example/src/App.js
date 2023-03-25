@@ -60,6 +60,10 @@ class Example extends React.Component {
               <p>Item 1</p>
               <p>Item 2</p>
             </ContainerBaseColumn>
+            <ContainerBaseColumn inlineCss="display: none !important;" justify="space-between" height="100%">
+              <p>Item 3</p>
+              <p>Item 4</p>
+            </ContainerBaseColumn>
           </ContainerBaseRow>
 
           <ContainerBaseRow
