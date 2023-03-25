@@ -1,6 +1,6 @@
 {
   "name": "@bismarkanes/container-base",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple container based on flexbox",
   "author": "bismarkanes <bismark.john.anes@gmail.com>",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
+    "react": "16.8 - 18",
     "styled-components": ">=5.1.1"
   },
   "devDependencies": {
